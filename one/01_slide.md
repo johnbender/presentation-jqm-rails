@@ -1,5 +1,6 @@
 !SLIDE
-# Rails & JQM
+# JQM on Rails
+TODO INSERT PRESO URL
 
 !SLIDE bullets mono-bullets
 ## Me
@@ -7,10 +8,12 @@
 * johnbender.us
 * github.com/johnbender
 
-!SLIDE bullets mono-bullets
-## Projects
-* vagrant
-* jquerymobile
+!SLIDE center adobe-background
+## Jquery Mobile
+
+!SLIDE center
+## Vagrant
+vagrantup.com
 
 !SLIDE
 ## Emojicons.com
@@ -21,24 +24,21 @@
 
 !SLIDE
 # Mobile
-
-!SLIDE
-## Explosion
 ### ‎(ﾉಥ益ಥ）ﾉ
 
 !SLIDE
-### gazillions of devices
+<h3 style="font-size: 6.0em">gazillions of devices</h3>
 usage doubled to 8.5% from '11 to '12
-
-!SLIDE
-## Diversity
-### (づ￣ ³￣)づ
 
 !SLIDE center
 <img src="mobile-browser-stats.jpg" class="tweak-img" style="top: 50px; margin-left: 50px;"></img>
 
 !SLIDE
+### Opera > iOS
+
+!SLIDE
 # jQuery Mobile
+### \|°▿▿▿▿°|/
 
 !SLIDE
 ## Users
@@ -131,12 +131,10 @@ news.ycombinator.com/item?id=3549640
 ### ( ˘ ³˘)♥
 
 !SLIDE
-## webkit! amiright?!?
-sadly you're not
+## Webkit! amiright?!
 
 !SLIDE
-## webkit! amiright?!?
-sadly you're not
+## Webkit! amiright?!
 <div class="gigantor squished" style="">(屮ﾟДﾟ)屮</div>
 
 !SLIDE
@@ -160,15 +158,23 @@ don't scroll, you'll be sorry
 each browser x 2
 
 !SLIDE
-## android
+## Android
 
 !SLIDE
-## android
+## Android
 <div class="gigantor">(╥﹏╥)</div>
 
 !SLIDE
 ### <img src="android-icon.png"></img> is the new <img src="ie-icon.png"></img>
 inflamatory statements at railsconf
+
+!SLIDE
+### 2.2, 2.3.3
+80+% percent of androids
+
+!SLIDE
+### rendering
+even rendering
 
 !SLIDE
 ### position fixed
@@ -177,3 +183,24 @@ we use &amp;nbsp; to fix bugs
 !SLIDE
 ### transitions
 toy examples work great
+
+!SLIDE
+# JQM on Rails
+### ʕノ•ᴥ•ʔノ ︵ ┻━┻
+
+!SLIDE
+## Sample app
+github.com/johnbender/jqm-rails
+
+!SLIDE
+### office presence
+sign up • signin • status
+
+!SLIDE
+### tips &amp; tricks
+validation • data-attrs • debugging
+
+!SLIDE center
+<div class="rotate-right" style="top: 170px; left: -50px"><h3>Presence</h3></div>
+<iframe class="phone-center" src="http://33.33.33.10:3000/sessions/new"> </iframe>
+

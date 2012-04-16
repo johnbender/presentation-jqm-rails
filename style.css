@@ -79,21 +79,15 @@ iframe.phone {
 }
 
 .content h1 {
-  font-size: 6.0em;
   background: #D65600;
   color: white;
   padding: 0.5em 15px;
 }
 
 .content h2 {
-  font-size: 6.0em;
   background: purple;
   color: white;
   padding: 0.25em 0;
-}
-
-.content h3 {
-  font-size: 6.0em;
 }
 
 h3 img {
@@ -102,6 +96,7 @@ h3 img {
 }
 
 h1, h2, h3, h4 {
+  font-size: 7em;
   font-family: Helvetica, Arial, sans-serif;
   padding-left: 50px;
   padding-right: 50px;
@@ -363,10 +358,10 @@ b .variable-name {
   text-align: center;
   font-size: 13em;
   font-weight: bold;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 5px black;
   height: 100%;
   padding-top: 25%;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.7);
 }
 
 .squished {
@@ -386,9 +381,10 @@ b .variable-name {
 }
 
 .adobe-background {
+  background-image: url(one/adobe.jpg);
   background-position: center center;
-  background-size: 800px 600px;
-  background-repeat: no-repeat
+  background-size: 1030px 780px; /* showoff slide centering :( */
+  background-repeat: no-repeat;
 }
 
 .slide .center {
