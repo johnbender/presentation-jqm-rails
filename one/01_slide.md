@@ -167,8 +167,8 @@ each browser x 2
 <div class="gigantor">(╥﹏╥)</div>
 
 !SLIDE
-### android is the new IE
-yes it's that bad
+### <img src="android-icon.png"></img> is the new <img src="ie-icon.png"></img>
+inflamatory statements at railsconf
 
 !SLIDE
 ### position fixed
