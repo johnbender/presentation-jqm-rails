@@ -14,7 +14,10 @@
 
 !SLIDE
 ## Emojicons.com
-### ლ(ಠ益ಠლ)
+
+!SLIDE
+## Emojicons.com
+<div class="gigantor squished" style="font-size: 12em;">ლ(ಠ益ಠლ)</div>
 
 !SLIDE
 # Mobile
@@ -39,7 +42,7 @@ usage doubled to 8.5% from '11 to '12
 
 !SLIDE
 ## Users
-pffft! no one uses this crap
+no one uses this crap
 
 !SLIDE bullets grid users
 <div style="float: left; margin-left: 100px">
@@ -51,6 +54,7 @@ pffft! no one uses this crap
   <li> Stanford </li>
 </ul>
 </div>
+
 <div style="float: left">
 <ul>
   <li> m.sears.com </li>
@@ -77,7 +81,7 @@ pffft! no one uses this crap
   <li>m.chase.com </li>
   <li>m.ikea.com </li>
   <li> m.life.com </li>
-  <li style="color: red">m.stanford.edu </li>
+  <li style="color: red">m.stanford.edu</li>
 </ul>
 </div>
 
@@ -107,29 +111,37 @@ jquerymobile.com/gbs/
 </div>
 
 !SLIDE
-## Progressive Enhancement
+## Quick Stats
+### (=O*_*)=O Q(*_*Q)
+
+!SLIDE
+### github
+6000+ watchers / 1000+ forks
+
+!SLIDE
+### books
+8 books / 7 publishers
+
+!SLIDE
+### sentiment
+news.ycombinator.com/item?id=3549640
+
+!SLIDE
+<h1 style="font-size: 5.2em">Progressive Enhancement</h1>
 ### ( ˘ ³˘)♥
 
 !SLIDE
-### webkit! amiright?!?
+## webkit! amiright?!?
 sadly you're not
 
 !SLIDE
-### webkit! amiright?!?
+## webkit! amiright?!?
 sadly you're not
-<div class="gigantor squished">(屮ﾟДﾟ)屮</div>
+<div class="gigantor squished" style="">(屮ﾟДﾟ)屮</div>
 
 !SLIDE
-### even the worst browsers
-no js? no credit? no problem
-
-!SLIDE
-### sane defaults
-history api, android css animations
-
-!SLIDE
-### history api
-(push|pop|replace)State break spec
+### history
+(push|pop|replace)State
 
 !SLIDE
 ### orientation
@@ -148,16 +160,20 @@ don't scroll, you'll be sorry
 each browser x 2
 
 !SLIDE
-### android
+## android
 
 !SLIDE
-### android
+## android
 <div class="gigantor">(╥﹏╥)</div>
 
 !SLIDE
-### 2.2, 2.3.3
-80%+ percent of androids
+### android is the new IE
+yes it's that bad
 
 !SLIDE
-### android is the new IE
-transitions, position fixed
+### position fixed
+we use &amp;nbsp; to fix bugs
+
+!SLIDE
+### transitions
+toy examples work great
