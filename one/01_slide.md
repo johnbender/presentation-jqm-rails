@@ -209,9 +209,9 @@ sign up • sign in • status
 !SLIDE
 <div class="file-name">app/views/layouts/application.html.erb</div>
 <pre style="font-size: 2.3em;">
-&lt;<span class="function-name">link</span> <span class="variable-name">rel</span>=<span class="string">"stylesheet"</span> <span class="variable-name">href</span>=<span class="string">"jquery.mobile.css"</span>/&gt;
-&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery-1.6.4.min.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
-&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">link</span> <span class="variable-name">rel</span>=<span class="string">"stylesheet"</span> <span class="variable-name">href</span>=<span class="string">"$CDN/jquery.mobile.css"</span>/&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery-1.6.4.min.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
 </pre>
 
 !SLIDE
@@ -221,8 +221,8 @@ sign up • sign in • status
       <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
 &lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
 &lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;
-&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
-&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
 </pre>
 
 !SLIDE
@@ -232,8 +232,8 @@ sign up • sign in • status
       <b><span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</b>
 &lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
 &lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;
-&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
-&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
 </pre>
 
 !SLIDE
@@ -243,8 +243,8 @@ sign up • sign in • status
      <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
 <b>&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;</b>
 <b>&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;</b>
-&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
-&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
 </pre>
 
 !SLIDE
@@ -254,14 +254,14 @@ sign up • sign in • status
      <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
 &lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
 &lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;
-<b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
-<b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
+<b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
+<b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
 </pre>
 
 
 !SLIDE
-### layouts
-page ∈ layout <span style="font-size: 1.2em">⋁</span> page ∈ view
+### layout
+page ∈ layout
 
 !SLIDE
 <div class="file-name">app/views/layouts/application.html.erb</div>
@@ -312,7 +312,8 @@ page ∈ layout <span style="font-size: 1.2em">⋁</span> page ∈ view
 </pre>
 
 !SLIDE
-### as a partial
+### partial
+page ∈ view
 
 !SLIDE
 <div class="file-name">app/views/layouts/application.html.erb</div>
@@ -323,7 +324,7 @@ page ∈ layout <span style="font-size: 1.2em">⋁</span> page ∈ view
 </pre>
 
 !SLIDE
-<div class="file-name">app/views/shared/page.html.erb</div>
+<div class="file-name">app/views/shared/_page.html.erb</div>
 <pre class="medium">
 &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span>&gt;
   &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
@@ -340,7 +341,7 @@ page ∈ layout <span style="font-size: 1.2em">⋁</span> page ∈ view
 !SLIDE
 <div class="file-name">app/views/shared/sample.html.erb</div>
 <pre class="medium">
-&lt;% render <span class="constant">:layout</span> =&gt; <span class="string">'shared/page'</span>
+&lt;% render <span class="constant">:layout</span> =&gt; <span class="string">'shared/page'</span>,
           <span class="constant">:locals</span> =&gt; { <span class="constant">:h1</span> =&gt; <span class="string">"foo"</span> } <span class="keyword">do</span> %&gt;
   &lt;<span class="function-name">div</span>&gt;The Content&lt;/<span class="function-name">div</span>&gt;
 &lt;% <span class="keyword">end</span> %&gt;
@@ -376,27 +377,124 @@ jquery-rails data attributes
 </pre>
 
 !SLIDE
-code - in view
+<div class="file-name">app/assets/javascripts/application.js</div>
+<pre class="medium">
+<span class="comment"><b>//= require jquery</b>
+//= require jquery_ujs
+//= require .
+</span>$( document ).on( <span class="string">"mobileinit"</span>, <span class="keyword">function</span>() {
+  <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
+});
+</pre>
+
+!SLIDE
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre style="font-size: 2.3em;">
+&lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span>
+      <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
+&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
+<b>&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;</b>
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+<b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
+</pre>
 
 !SLIDE
 ### form validation
 support the back button
 
 !SLIDE
-code - data-dom-cache="true"
+<div class="file-name">app/helpers/application_helper.rb</div>
+<pre style="font-size: 2.3em;">
+<span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
+  attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1
+  args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)
+  send(*args)
+<span class="keyword">end</span>
+</pre>
 
 !SLIDE
-code - differentiate_path
+<div class="file-name">app/helpers/application_helper.rb</div>
+<pre style="font-size: 2.3em;">
+<span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
+  <b>attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1</b>
+  args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)
+  send(*args)
+<span class="keyword">end</span>
+</pre>
+
+!SLIDE
+<div class="file-name">app/helpers/application_helper.rb</div>
+<pre style="font-size: 2.3em;">
+<span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
+  attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1
+  <b>args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)</b>
+  send(*args)
+<span class="keyword">end</span>
+</pre>
+
+!SLIDE
+<div class="file-name">app/helpers/application_helper.rb</div>
+<pre style="font-size: 2.3em;">
+<span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
+  attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1
+  args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)
+  <b>send(*args)</b>
+<span class="keyword">end</span>
+</pre>
+
+!SLIDE
+<div class="file-name">app/views/users/new.html.erb, app/views/users/edit.html.erb</div>
+<pre class="medium">
+<span class="comment-delimiter"># </span><span class="comment">new form</span>
+<span class="constant">:url</span> =&gt; differentiate_path(<span class="constant">:users_path</span>)
+
+<span class="comment-delimiter"># </span><span class="comment">edit form</span>
+<span class="constant">:url</span> =&gt; differentiate_path(<span class="constant">:user_path</span>, <span class="variable-name">@user</span>)
+</pre>
+
+
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre class="medium">
+&lt;<span class="function-name">body</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span> <b><span class="variable-name">data-dom-cache</span>=<span class="string">"true"</span></b>&gt;
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
+      &lt;<span class="function-name">h1</span>&gt;&lt;%= yield :heading %&gt;&lt;/<span class="function-name">h1</span>&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+      &lt;%= yield %&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">body</span>&gt;</pre>
 
 !SLIDE
 ### debugging
 weinre • Adobe Shadow
 
 !SLIDE
-code - if development include
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre style="font-size: 2.3em">
+&lt;<span class="function-name">head</span>&gt;
+  ...
+  &lt;% <span class="keyword">if</span> <span class="type">Rails</span>.env.development? %&gt;
+    &lt;%= javascript_include_tag <span class="string">"debug/pagefailed"</span> %&gt;
+  &lt;% <span class="keyword">end</span> %&gt;
+  ...
+&lt;<span class="function-name">/head</span>&gt;
+</pre>
 
 !SLIDE
-code - replace body
+<div class="file-name">app/assets/javascripts/debug/pagefailed.js</div>
+<pre style="font-size: 2.3em">
+<span class="keyword">function</span> <span class="function-name">onLoadFailed</span>( <span class="js2-function-param">event</span>, <span class="js2-function-param">data</span> ) {
+  <span class="keyword">var</span> <span class="variable-name">text</span> = data.xhr.responseText,
+    <span class="variable-name">newHtml</span> = text.split( <span class="string">/&lt;\/?html[^&gt;]*&gt;/gmi</span> )[1];
+  $( <span class="string">"html"</span> ).html( newHtml );
+}
+
+$( document ).on( <span class="string">"pageloadfailed"</span>, onLoadFailed );</pre>
 
 !SLIDE
 ## Possibilities
@@ -427,4 +525,4 @@ AMD support • meta module
 * johnbender.us
 * github.com/johnbender
 
-<div class="gigantor" style="font-size: 9.0em">(づ｡◕‿‿◕｡)づ</div>
+<div class="gigantor" style="font-size: 9.0em; padding">(づ｡◕‿‿◕｡)づ</div>
