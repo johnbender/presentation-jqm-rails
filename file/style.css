@@ -1,0 +1,437 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+iframe {
+  width: 1024px;
+  height: 768px;
+}
+
+iframe.phone-center {
+  margin-left: 100px;
+  margin-top: 0px;
+  height: 660px;
+  width: 440px;
+  border: 5px solid #D65600;
+  border-radius: 3px;
+}
+
+iframe.phone {
+  height: 660px;
+  width: 440px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  border: 5px solid #D65600;
+  border-radius: 3px;
+}
+
+.content.video {
+  text-align: center;
+}
+
+.content.video iframe {
+  margin: 0 auto;
+  border: 5px solid purple;
+  border-radius: 3px;
+}
+
+.tweak-img {
+  position: relative;
+  top: 0px;
+}
+
+.mono-bullets ul, .link p {
+  font-size: 3em;
+}
+
+.thanks ul {
+  font-size: 3em;
+}
+
+.content.thanks > h1 {
+  font-size: 8em;
+  padding: 0.5em 15px;
+  margin-bottom: 0.2em;
+}
+
+.link p {
+  font-size: 2.5em;
+}
+
+.bullets.grid ul {
+  font-size: 3em;
+  margin-left: 40px;
+  /* account for showoff positioning */
+  margin-top: -200px;
+}
+
+.bullets.grid li {
+  margin-top: 20px;
+}
+
+.bullets.grid.users ul {
+  margin-left: 80px;
+}
+
+.bullets.small li {
+  font-size: 0.8em;
+}
+
+.content h1 {
+  background: #D65600;
+  color: white;
+  padding: 0.5em 15px;
+}
+
+.content h2 {
+  background: purple;
+  color: white;
+  padding: 0.25em 0;
+}
+
+h3 img {
+  max-height: 0.7em;
+  margin-bottom: 0px;
+}
+
+h1, h2, h3, h4 {
+  font-size: 7em;
+  font-family: Helvetica, Arial, sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h1 b {
+  font-size: 1.18em;
+}
+
+h1 .small {
+  font-size: 0.5em;
+}
+
+h1, h2, h3 {
+ background-color: #666666;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ background-clip: text;
+ text-shadow: rgba(50, 50, 50, 0.8) 0px 1px 3px;
+}
+
+.content code {
+  font-size: 1.1em;
+  font-family: 'monospace';
+}
+
+.content code.large {
+  font-size: 0.9em;
+  font-family: 'monospace';
+}
+
+.question {
+  font-size: 40em;
+  color: purple;
+  text-align: center;
+}
+
+.content.full-image img {
+  height: 768px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.title h3 {
+  font-size: 3.0em;
+}
+
+.title p {
+  font-size: 2.0em;
+}
+
+#fixture a {
+  color: #333;
+  text-decoration: none;
+  font-size: 4em;
+}
+
+#qunit-feedback {
+  min-height: 200px;
+}
+
+body.example {
+  text-align: center;
+  padding-top: 20px;
+}
+
+body.example img {
+  min-width: 10%;
+  font-size: 20px;
+}
+
+img {
+  margin-bottom: 300px;
+}
+
+body.example #qunit-feedback {
+  text-align: left;
+}
+
+span.monospace {
+  font-family: monospace;
+}
+
+.heart {
+  color: red;
+  font-size: 1.5em;
+}
+
+.content.intro h3 {
+  font-size: 3.01em;
+}
+
+.content > pre {
+  color: #333333;
+  line-height: 1.4em;
+  padding: 0px;
+  font-size: 3.5em;
+}
+
+pre.extreme {
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+/* code highlights */
+pre.xxxlarge {
+  font-size: 1em;
+}
+
+pre.xxlarge {
+  font-size: 1.3em;
+}
+
+/* code highlights */
+pre.xlarge {
+  font-size: 2.0em;
+}
+
+pre.large {
+  font-size: 2.4em;
+}
+
+pre.medium {
+  font-size: 2.7em;
+}
+
+.content > pre.right {
+  position: absolute;
+  top: 218px;
+  right: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content > pre.top {
+  position: absolute;
+  top: 20px;
+}
+
+.content > pre.bottom {
+  position: absolute;
+  bottom: 90px;
+}
+
+b, h3 > b, .content > pre b, .highlight b, b > .function-name, b > .string, b > .type, b > .constant , b > .variable-name {
+  background: #D65600;
+  color: white !important;
+  outline: .10em solid #D65600;
+}
+
+h3 > b {
+  outline-top: .10em;
+}
+
+.content > pre b.normal, .highlight b.normal, b.normal > .function-name, b.normal > .string {
+  font-size: 1em;
+}
+
+.many-pre pre {
+  margin-bottom: 50px;
+  border-bottom: 3px dashed black;
+}
+
+.content > ul > li {
+  margin-left: 0;
+}
+
+.builtin {
+  /* font-lock-builtin-face */
+  color: #62124b;
+}
+.comment {
+  /* font-lock-comment-face */
+  color: #aea79f;
+  font-style: italic;
+}
+
+.comment-delimiter {
+  /* font-lock-comment-delimiter-face */
+  color: #aea79f;
+  font-style: italic;
+}
+
+.function-name {
+  /* font-lock-function-name-face */
+  color: #860e73;
+  font-weight: bold;
+}
+.keyword {
+  /* font-lock-keyword-face */
+  color: #f47321;
+  font-weight: bold;
+}
+.string {
+  /* font-lock-string-face */
+  color: #dd1144;
+}
+.variable-name {
+  /* font-lock-variable-name-face */
+  color: #8b005a;
+}
+
+b .variable-name {
+  color: white;
+}
+
+.css-property {
+  /* css-property */
+  color: #8b005a;
+}
+.css-selector {
+  /* css-selector */
+  color: #860e73;
+  font-weight: bold;
+}
+
+.type {
+  /* font-lock-type-face */
+  color: #83a525;
+}
+.constant {
+  /* font-lock-constant-face */
+  color: #f68d47;
+}
+.attribution h4 {
+  font-size: 1.0em;
+  margin: auto;
+  text-align: center;
+  font-weight: normal;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 80px;
+  right: 25px;
+  font-size: 16em;
+  color: purple;
+}
+
+.centered-arrow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  text-align: center;
+  padding-top: 22%;
+  font-size: 16em;
+  color: purple;
+}
+
+.gigantor {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 13em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+  height: 100%;
+  padding-top: 25%;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.squished {
+  font-size: 14em;
+}
+
+.code-center > pre {
+  margin-left: 220px;
+}
+
+.short > h3 {
+  margin: 0.2em 0 0.7em 0;
+}
+
+.short > h2 {
+  margin-top: 0.2em;
+}
+
+.adobe-background {
+  background-image: url(one/adobe.jpg);
+  background-position: center center;
+  background-size: 1030px 780px; /* showoff slide centering :( */
+  background-repeat: no-repeat;
+}
+
+.slide .center {
+  width: 1024px;
+  height: 768px;
+}
+
+.large-unicode {
+  font-size: 2em;
+}
+
+.xlarge-unicode {
+  font-size: 5em;
+  line-height: 250px;
+}
+
+.rotate-right {
+  text-align: right;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+}
+
+.high-image {
+  position: absolute;
+  top: 100px;
+}
+
+.blur {
+  text-shadow: 0px 0px 3px white;
+}
+
+h2.blur {
+  box-shadow: 0px 0px 3px purple;
+}
+
+.blur li {
+  text-shadow: 0px 0px 3px black;
+}
+
+.file-name {
+  position: absolute;
+  top: 0px;
+  background-color: #555;
+  color: white;
+  width: 100%;
+  padding: 20px 40px;
+  font-size: 1.7em;
+  box-shadow: 0px 1px 4px grey;
+}

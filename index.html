@@ -1,0 +1,777 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Rails and JQM</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/style.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="one/01_slide/1">
+<h1 style="font-size: 5.2em">Progressive Enhancement<br/><span style="font-size: 0.9em">on the mobile web</span></h1>
+
+
+<p>TODO INSERT PRESO URL</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets mono-bullets" ref="one/01_slide/2">
+<h2>Me</h2>
+
+<ul>
+<li>@johnbender</li>
+<li>johnbender.us</li>
+<li>github.com/johnbender</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center adobe-background" ref="one/01_slide/3">
+<h2>Jquery Mobile</h2></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/4">
+<h2>Vagrant</h2>
+
+<p>vagrantup.com</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/5">
+<h2>Emojicons.com</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/6">
+<h2 class="blur">Emojicons.com</h2>
+
+
+<div class="gigantor squished" style="font-size: 12em;">&#x10DA;(&#xCA0;&#x76CA;&#xCA0;&#x10DA;)</div>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/7">
+<h1>Mobile</h1>
+
+<h3>&#x200E;(&#xFF89;&#xCA5;&#x76CA;&#xCA5;&#xFF09;&#xFF89;</h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/8">
+<h3 style="font-size: 6.0em">gazillions of devices</h3>
+
+
+<p>usage doubled to 8.5% from '11 to '12</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/9">
+<p><img src="./file/one/mobile-browser-stats.jpg" class="tweak-img" style="top: 50px; margin-left: 50px;"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/10">
+<h3>Opera &gt; iOS</h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/11">
+<h1>Jquery Mobile</h1>
+
+<h3>\|&#xB0;&#x25BF;&#x25BF;&#x25BF;&#x25BF;&#xB0;|/</h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/12">
+<h2>Users</h2>
+
+<p>no one uses this crap</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets grid users" ref="one/01_slide/13">
+<div style="float: left; margin-left: 100px">
+<ul>
+  <li> Sears </li>
+  <li> Chase </li>
+  <li> Ikea </li>
+  <li> Life </li>
+  <li> Stanford </li>
+</ul>
+</div>
+
+
+
+
+<div style="float: left">
+<ul>
+  <li> m.sears.com </li>
+  <li> m.chase.com </li>
+  <li> m.ikea.com </li>
+  <li> m.life.com </li>
+  <li> m.stanford.edu </li>
+</ul>
+</div>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets grid users" ref="one/01_slide/14">
+<div style="float: left; margin-left: 100px">
+<ul>
+  <li>Sears </li>
+  <li>Chase </li>
+  <li>Ikea </li>
+  <li> Life </li>
+  <li style="color: red">Stanford </li>
+</ul>
+</div>
+
+
+<div style="float: left">
+<ul>
+  <li>m.sears.com </li>
+  <li>m.chase.com </li>
+  <li>m.ikea.com </li>
+  <li> m.life.com </li>
+  <li style="color: red">m.stanford.edu</li>
+</ul>
+</div>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/15">
+<h2>Browser Support</h2>
+
+<p>jquerymobile.com/gbs/</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets grid" ref="one/01_slide/16">
+<div style="float: left">
+<ul>
+  <li> Apple iOS 3.2-5.0 </li>
+  <li> Android 2.1-4.0 </li>
+  <li> Windows Phone 7-7.5 </li>
+  <li> Blackberry 6-7, QNX </li>
+  <li> Palm WebOS 1.4-3.0 </li>
+</ul>
+</div>
+
+
+
+
+<div style="float: left">
+<ul>
+  <li> Firebox Mobile </li>
+  <li> Opera Mobile 11.0 </li>
+  <li> Meego 1.2 </li>
+  <li> Chrome, Firefox </li>
+  <li> IE 7+, Opera 10+ </li>
+</ul>
+</div>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/17">
+<h2>Quick Stats</h2>
+
+<h3>(=O<em>_</em>)=O Q(<em>_</em>Q)</h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/18">
+<h3>github</h3>
+
+<p>6000+ watchers &#x2022; 1000+ forks</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/19">
+<h3>books</h3>
+
+<p>8 books &#x2022; 7 publishers</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/20">
+<h3>sentiment</h3>
+
+<p>news.ycombinator.com/item?id=3549640</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/21">
+<h1 style="font-size: 5.2em">Progressive Enhancement</h1>
+
+
+<h3>( &#x2D8; &#xB3;&#x2D8;)&#x2665;</h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/22">
+<h2>Webkit! amiright?!</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/23">
+<h2 class="blur">Webkit! amiright?!</h2>
+
+
+<div class="gigantor squished" style="">(&#x5C6E;&#xFF9F;&#x414;&#xFF9F;)&#x5C6E;</div>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/24">
+<h3>history</h3>
+
+<p>(push|pop|replace)State</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/25">
+<h3>orientation</h3>
+
+<p>180&#xB0;? 90&#xB0;? 0&#xB0;? 270&#xB0;?</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/26">
+<h3>tap vs click</h3>
+
+<p>don't scroll, you'll be sorry</p></div>
+</div><div class="slide" data-transition="none"><div class="content high-image center" ref="one/01_slide/27">
+<p><img src="./file/one/droidincredible.jpg" style="height: 500px; float: left; margin-left: 155px;"/>
+<img src="./file/one/blackberry-bold.jpg" style="height: 480px; float: left; margin-top: 10px;"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/28">
+<h3>web views</h3>
+
+<p>each browser x 2</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/29">
+<h2>Android</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/30">
+<h2 class="blur">Android</h2>
+
+
+<div class="gigantor">(&#x2565;&#xFE4F;&#x2565;)</div>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/31">
+<h3><img src="./file/one/android-icon.png"/> is the new <img src="./file/one/ie-icon.png"/></h3>
+
+<p>inflammatory statements at railsconf</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/32">
+<h3>2.2, 2.3.3</h3>
+
+<p>80+% percent of androids</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/33">
+<h3>rendering</h3>
+
+<p>even rendering</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/34">
+<h3>position fixed</h3>
+
+<p>we use &amp;nbsp; to fix bugs</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/35">
+<h3>transitions</h3>
+
+<p>toy examples work great</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/36">
+<h1>Jqm on Rails</h1>
+
+<h3>&#x295;&#x30CE;&#x2022;&#x1D25;&#x2022;&#x294;&#x30CE; &#xFE35; &#x253B;&#x2501;&#x253B;</h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/37">
+<h2>Sample app</h2>
+
+<p>github.com/johnbender/jqm-rails</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/38">
+<h3>office presence</h3>
+
+<p>sign up &#x2022; sign in &#x2022; status</p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="one/01_slide/39">
+<div class="rotate-right" style="top: 170px;"><h3>Presence</h3></div>
+
+
+<iframe class="phone-center" src="http://33.33.33.10:3000/sessions/new"> </iframe>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/40">
+<h2>Points of interest</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/41">
+<h3>setting up</h3></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/42">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre style="font-size: 2.3em;">
+&lt;<span class="function-name">link</span> <span class="variable-name">rel</span>=<span class="string">"stylesheet"</span> <span class="variable-name">href</span>=<span class="string">"$CDN/jquery.mobile.css"</span>/&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery-1.6.4.min.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/43">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre style="font-size: 2.3em;">
+&lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span>
+      <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
+&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
+&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/44">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre style="font-size: 2.3em;">
+<b>&lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span></b>
+      <b><span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</b>
+&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
+&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/45">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre style="font-size: 2.3em;">
+&lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span>
+     <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
+<b>&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;</b>
+<b>&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;</b>
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/46">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre style="font-size: 2.3em;">
+&lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span>
+     <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
+&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
+&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;
+<b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
+<b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/47">
+<h3>layout</h3>
+
+<p>page &#x2208; layout</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/48">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre class="medium">
+&lt;<span class="function-name">body</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span>&gt;
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
+      &lt;<span class="function-name">h1</span>&gt;&lt;%= yield :heading %&gt;&lt;/<span class="function-name">h1</span>&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+      &lt;%= yield %&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">body</span>&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/49">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre class="medium">
+&lt;<span class="function-name">body</span>&gt;
+  <b>&lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span>&gt;</b>
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
+      &lt;<span class="function-name">h1</span>&gt;&lt;%= yield :heading %&gt;&lt;/<span class="function-name">h1</span>&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+      &lt;%= yield %&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">body</span>&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/50">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre class="medium">
+&lt;<span class="function-name">body</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span>&gt;
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
+      &lt;<span class="function-name">h1</span>&gt;&lt;%= yield :heading %&gt;&lt;/<span class="function-name">h1</span>&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+      <b>&lt;%= yield %&gt;</b>
+    &lt;/<span class="function-name">div</span>&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">body</span>&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/51">
+<h3>partial</h3>
+
+<p>page &#x2208; view</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/52">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre class="medium">
+&lt;<span class="function-name">body</span>&gt;
+  &lt;%= yield %&gt;
+&lt;/<span class="function-name">body</span>&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/53">
+<div class="file-name">app/views/shared/_page.html.erb</div>
+
+
+<pre class="medium">
+&lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
+    &lt;<span class="function-name">h1</span>&gt;&lt;%= h1 %&gt;&lt;/<span class="function-name">h1</span>&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+    &lt;%= yield %&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">div</span>&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/54">
+<div class="file-name">app/views/shared/sample.html.erb</div>
+
+
+<pre class="medium">
+&lt;% render <span class="constant">:layout</span> =&gt; <span class="string">'shared/page'</span>,
+          <span class="constant">:locals</span> =&gt; { <span class="constant">:h1</span> =&gt; <span class="string">"foo"</span> } <span class="keyword">do</span> %&gt;
+  &lt;<span class="function-name">div</span>&gt;The Content&lt;/<span class="function-name">div</span>&gt;
+&lt;% <span class="keyword">end</span> %&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/55">
+<h3>data-* names</h3>
+
+<p>jquery-rails data attributes</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/56">
+<p><span style="font-family: monospace; font-size: 2.0em">$ grep data- jquery_ujs.js</span></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/57">
+<div class="file-name">app/assets/javascripts/application.js</div>
+
+
+<pre class="medium">
+<span class="comment">//= require jquery
+//= require jquery_ujs
+//= require .
+</span>$( document ).on( <span class="string">"mobileinit"</span>, <span class="keyword">function</span>() {
+  <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
+});
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/58">
+<div class="file-name">app/assets/javascripts/application.js</div>
+
+
+<pre class="medium">
+<span class="comment">//= require jquery
+//= require jquery_ujs
+//= require .
+</span>$( document ).on( <b><span class="string">"mobileinit"</span></b>, <span class="keyword">function</span>() {
+  <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
+});
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/59">
+<div class="file-name">app/assets/javascripts/application.js</div>
+
+
+<pre class="medium">
+<span class="comment"><b>//= require jquery</b>
+//= require jquery_ujs
+//= require .
+</span>$( document ).on( <span class="string">"mobileinit"</span>, <span class="keyword">function</span>() {
+  <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
+});
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/60">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre style="font-size: 2.3em;">
+&lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span>
+      <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
+&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
+<b>&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;</b>
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+<b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/61">
+<h3>form validation</h3>
+
+<p>support the back button</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/62">
+<div class="file-name">app/helpers/application_helper.rb</div>
+
+
+<pre style="font-size: 2.3em;">
+<span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
+  attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1
+  args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)
+  send(*args)
+<span class="keyword">end</span>
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/63">
+<div class="file-name">app/helpers/application_helper.rb</div>
+
+
+<pre style="font-size: 2.3em;">
+<span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
+  <b>attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1</b>
+  args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)
+  send(*args)
+<span class="keyword">end</span>
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/64">
+<div class="file-name">app/helpers/application_helper.rb</div>
+
+
+<pre style="font-size: 2.3em;">
+<span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
+  attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1
+  <b>args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)</b>
+  send(*args)
+<span class="keyword">end</span>
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/65">
+<div class="file-name">app/helpers/application_helper.rb</div>
+
+
+<pre style="font-size: 2.3em;">
+<span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
+  attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1
+  args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)
+  <b>send(*args)</b>
+<span class="keyword">end</span>
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/66">
+<div class="file-name">app/views/users/new.html.erb, app/views/users/edit.html.erb</div>
+
+
+<pre class="medium">
+<span class="comment-delimiter"># </span><span class="comment">new form</span>
+<span class="constant">:url</span> =&gt; differentiate_path(<span class="constant">:users_path</span>)
+
+<span class="comment-delimiter"># </span><span class="comment">edit form</span>
+<span class="constant">:url</span> =&gt; differentiate_path(<span class="constant">:user_path</span>, <span class="variable-name">@user</span>)
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/67">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre class="medium">
+&lt;<span class="function-name">body</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span> <b><span class="variable-name">data-dom-cache</span>=<span class="string">"true"</span></b>&gt;
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
+      &lt;<span class="function-name">h1</span>&gt;&lt;%= yield :heading %&gt;&lt;/<span class="function-name">h1</span>&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+      &lt;%= yield %&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">body</span>&gt;</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/68">
+<h3>debugging</h3>
+
+<p>weinre &#x2022; Adobe Shadow</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/69">
+<div class="file-name">app/views/layouts/application.html.erb</div>
+
+
+<pre style="font-size: 2.3em">
+&lt;<span class="function-name">head</span>&gt;
+  ...
+  &lt;% <span class="keyword">if</span> <span class="type">Rails</span>.env.development? %&gt;
+    &lt;%= javascript_include_tag <span class="string">"debug/pagefailed"</span> %&gt;
+  &lt;% <span class="keyword">end</span> %&gt;
+  ...
+&lt;<span class="function-name">/head</span>&gt;
+</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/70">
+<div class="file-name">app/assets/javascripts/debug/pagefailed.js</div>
+
+
+<pre style="font-size: 2.3em">
+<span class="keyword">function</span> <span class="function-name">onLoadFailed</span>( <span class="js2-function-param">event</span>, <span class="js2-function-param">data</span> ) {
+  <span class="keyword">var</span> <span class="variable-name">text</span> = data.xhr.responseText,
+      <span class="variable-name">newHtml</span> = text.split( <span class="string">/&lt;\/?html[^&gt;]*&gt;/gmi</span> )[1];
+
+  $( <span class="string">"html"</span> ).html( newHtml );
+}
+
+$( document ).on( <span class="string">"pageloadfailed"</span>, onLoadFailed );</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/71">
+<div class="file-name">app/assets/javascripts/debug/pagefailed.js</div>
+
+
+<pre style="font-size: 2.3em">
+<span class="keyword">function</span> <span class="function-name">onLoadFailed</span>( <span class="js2-function-param">event</span>, <span class="js2-function-param">data</span> ) {
+  <span class="keyword">var</span> <span class="variable-name">text</span> = data.xhr.responseText,
+      <span class="variable-name">newHtml</span> = text.split( <span class="string">/&lt;\/?html[^&gt;]*&gt;/gmi</span> )[1];
+
+  $( <span class="string">"html"</span> ).html( newHtml );
+}
+
+$( document ).on( <b><span class="string">"pageloadfailed"</span></b>, onLoadFailed );</pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/72">
+<div class="file-name">app/assets/javascripts/application.js</div>
+
+
+<pre>
+<span class="comment">//= require jquery
+//= require jquery_ujs
+<b>//= require .</b>
+</span></pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/73">
+<div class="file-name">app/assets/javascripts/application.js</div>
+
+
+<pre>
+<span class="comment">//= require jquery
+//= require jquery_ujs
+<b>//= require_directory .</b>
+</span></pre>
+
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/74">
+<h2>Possibilities</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/75">
+<h3>responsive</h3>
+
+<p>WURFL &#x2022; media queries</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="one/01_slide/76">
+<h3>asset pipeline</h3>
+
+<p>AMD support &#x2022; meta module</p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets mono-bullets" ref="one/01_slide/77">
+<h2>Links</h2>
+
+<ul>
+<li>jquerymobile.com/resources</li>
+<li>jquerymobile.com/themeroller</li>
+<li>jqmgallery.com</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets mono-bullets" ref="one/01_slide/78">
+<h2>Thanks</h2>
+
+<ul>
+<li>@johnbender</li>
+<li>johnbender.us</li>
+<li>github.com/johnbender</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets mono-bullets blur" ref="one/01_slide/79">
+<h2 class="blur">Thanks</h2>
+
+
+<ul>
+<li>@johnbender</li>
+<li>johnbender.us</li>
+<li>github.com/johnbender</li>
+</ul>
+
+
+<div class="gigantor" style="font-size: 9.0em; padding">(&#x3065;&#xFF61;&#x25D5;&#x203F;&#x203F;&#x25D5;&#xFF61;)&#x3065;</div>
+</div>
+</div></div>
+
+</body>
+</html>
