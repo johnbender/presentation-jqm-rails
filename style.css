@@ -408,10 +408,6 @@ b .variable-name {
   -webkit-transform: rotate(-90deg);
 }
 
-.stressed-phones {
-  background: url(one/stressed-phones.jpg) white center no-repeat fixed;
-}
-
 .high-image {
   position: absolute;
   top: 100px;
