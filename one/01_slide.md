@@ -1,5 +1,5 @@
 !SLIDE
-# JQM on Rails
+<h1 style="font-size: 5.2em">Progressive Enhancement<br/><span style="font-size: 0.9em">on the mobile web</span></h1>
 TODO INSERT PRESO URL
 
 !SLIDE bullets mono-bullets
@@ -19,7 +19,7 @@ vagrantup.com
 ## Emojicons.com
 
 !SLIDE
-## Emojicons.com
+<h2 class="blur">Emojicons.com</h2>
 <div class="gigantor squished" style="font-size: 12em;">ლ(ಠ益ಠლ)</div>
 
 !SLIDE
@@ -37,7 +37,7 @@ usage doubled to 8.5% from '11 to '12
 ### Opera > iOS
 
 !SLIDE
-# jQuery Mobile
+# Jquery Mobile
 ### \|°▿▿▿▿°|/
 
 !SLIDE
@@ -134,7 +134,7 @@ news.ycombinator.com/item?id=3549640
 ## Webkit! amiright?!
 
 !SLIDE
-## Webkit! amiright?!
+<h2 class="blur">Webkit! amiright?!</h2>
 <div class="gigantor squished" style="">(屮ﾟДﾟ)屮</div>
 
 !SLIDE
@@ -161,12 +161,12 @@ each browser x 2
 ## Android
 
 !SLIDE
-## Android
+<h2 class="blur">Android</h2>
 <div class="gigantor">(╥﹏╥)</div>
 
 !SLIDE
 ### <img src="android-icon.png"></img> is the new <img src="ie-icon.png"></img>
-inflamatory statements at railsconf
+inflammatory statements at railsconf
 
 !SLIDE
 ### 2.2, 2.3.3
@@ -185,7 +185,7 @@ we use &amp;nbsp; to fix bugs
 toy examples work great
 
 !SLIDE
-# JQM on Rails
+# Jqm on Rails
 ### ʕノ•ᴥ•ʔノ ︵ ┻━┻
 
 !SLIDE
@@ -194,13 +194,238 @@ github.com/johnbender/jqm-rails
 
 !SLIDE
 ### office presence
-sign up • signin • status
-
-!SLIDE
-### tips &amp; tricks
-validation • data-attrs • debugging
+sign up • sign in • status
 
 !SLIDE center
-<div class="rotate-right" style="top: 170px; left: -50px"><h3>Presence</h3></div>
+<div class="rotate-right" style="top: 170px;"><h3>Presence</h3></div>
 <iframe class="phone-center" src="http://33.33.33.10:3000/sessions/new"> </iframe>
 
+!SLIDE
+## Points of interest
+
+!SLIDE
+### setting up
+
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre style="font-size: 2.3em;">
+&lt;<span class="function-name">link</span> <span class="variable-name">rel</span>=<span class="string">"stylesheet"</span> <span class="variable-name">href</span>=<span class="string">"jquery.mobile.css"</span>/&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery-1.6.4.min.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+</pre>
+
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre style="font-size: 2.3em;">
+&lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span>
+      <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
+&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
+&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+</pre>
+
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre style="font-size: 2.3em;">
+<b>&lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span></b>
+      <b><span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</b>
+&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
+&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+</pre>
+
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre style="font-size: 2.3em;">
+&lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span>
+     <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
+<b>&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;</b>
+<b>&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;</b>
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;
+</pre>
+
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre style="font-size: 2.3em;">
+&lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span>
+     <span class="variable-name">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;
+&lt;%= stylesheet_link_tag <span class="string">"application"</span> %&gt;
+&lt;%= javascript_include_tag <span class="string">"application"</span> %&gt;
+<b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.css"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
+<b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
+</pre>
+
+
+!SLIDE
+### layouts
+page ∈ layout <span style="font-size: 1.2em">⋁</span> page ∈ view
+
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre class="medium">
+&lt;<span class="function-name">body</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span>&gt;
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
+      &lt;<span class="function-name">h1</span>&gt;&lt;%= yield :heading %&gt;&lt;/<span class="function-name">h1</span>&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+      &lt;%= yield %&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">body</span>&gt;
+</pre>
+
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre class="medium">
+&lt;<span class="function-name">body</span>&gt;
+  <b>&lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span>&gt;</b>
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
+      &lt;<span class="function-name">h1</span>&gt;&lt;%= yield :heading %&gt;&lt;/<span class="function-name">h1</span>&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+      &lt;%= yield %&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">body</span>&gt;
+</pre>
+
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre class="medium">
+&lt;<span class="function-name">body</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span>&gt;
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
+      &lt;<span class="function-name">h1</span>&gt;&lt;%= yield :heading %&gt;&lt;/<span class="function-name">h1</span>&gt;
+    &lt;/<span class="function-name">div</span>&gt;
+
+    &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+      <b>&lt;%= yield %&gt;</b>
+    &lt;/<span class="function-name">div</span>&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">body</span>&gt;
+</pre>
+
+!SLIDE
+### as a partial
+
+!SLIDE
+<div class="file-name">app/views/layouts/application.html.erb</div>
+<pre class="medium">
+&lt;<span class="function-name">body</span>&gt;
+  &lt;%= yield %&gt;
+&lt;/<span class="function-name">body</span>&gt;
+</pre>
+
+!SLIDE
+<div class="file-name">app/views/shared/page.html.erb</div>
+<pre class="medium">
+&lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"header"</span>&gt;
+    &lt;<span class="function-name">h1</span>&gt;&lt;%= h1 %&gt;&lt;/<span class="function-name">h1</span>&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+    &lt;%= yield %&gt;
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">div</span>&gt;
+</pre>
+
+
+!SLIDE
+<div class="file-name">app/views/shared/sample.html.erb</div>
+<pre class="medium">
+&lt;% render <span class="constant">:layout</span> =&gt; <span class="string">'shared/page'</span>
+          <span class="constant">:locals</span> =&gt; { <span class="constant">:h1</span> =&gt; <span class="string">"foo"</span> } <span class="keyword">do</span> %&gt;
+  &lt;<span class="function-name">div</span>&gt;The Content&lt;/<span class="function-name">div</span>&gt;
+&lt;% <span class="keyword">end</span> %&gt;
+</pre>
+
+!SLIDE
+### data-* names
+jquery-rails data attributes
+
+!SLIDE
+<span style="font-family: monospace; font-size: 2.0em">$ grep data- jquery_ujs.js</span>
+
+!SLIDE
+<pre class="medium">
+$( document ).on( <span class="string">"mobileinit"</span>, <span class="keyword">function</span>() {
+  <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
+});
+</pre>
+
+!SLIDE
+<pre class="medium">
+$( document ).on( <b><span class="string">"mobileinit"</span></b>, <span class="keyword">function</span>() {
+  <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
+});
+</pre>
+
+!SLIDE
+<pre class="medium">
+<span class="comment">//= require jquery
+//= require jquery_ujs
+//= require .
+</span>$( document ).on( <span class="string">"mobileinit"</span>, <span class="keyword">function</span>(){
+  <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
+});</pre>
+
+!SLIDE
+code - in view
+
+!SLIDE
+### form validation
+support the back button
+
+!SLIDE
+code - data-dom-cache="true"
+
+!SLIDE
+code - differentiate_path
+
+!SLIDE
+### debugging
+weinre • Adobe Shadow
+
+!SLIDE
+code - if development include
+
+!SLIDE
+code - replace body
+
+!SLIDE
+## Possibilities
+
+!SLIDE
+### responsive
+WURFL • media queries
+
+!SLIDE
+### asset pipeline
+AMD support • meta module
+
+!SLIDE bullets mono-bullets
+## Links
+* jquerymobile.com/resources
+* jquerymobile.com/themeroller
+* jqmgallery.com
+
+!SLIDE bullets mono-bullets
+## Thanks
+* @johnbender
+* johnbender.us
+* github.com/johnbender
+
+!SLIDE bullets mono-bullets blur
+<h2 class="blur">Thanks</h2>
+* @johnbender
+* johnbender.us
+* github.com/johnbender
+
+<div class="gigantor" style="font-size: 9.0em">(づ｡◕‿‿◕｡)づ</div>
