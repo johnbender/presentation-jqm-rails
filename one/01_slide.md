@@ -354,27 +354,26 @@ jquery-rails data attributes
 <span style="font-family: monospace; font-size: 2.0em">$ grep data- jquery_ujs.js</span>
 
 !SLIDE
-<pre class="medium">
-$( document ).on( <span class="string">"mobileinit"</span>, <span class="keyword">function</span>() {
-  <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
-});
-</pre>
-
-!SLIDE
-<pre class="medium">
-$( document ).on( <b><span class="string">"mobileinit"</span></b>, <span class="keyword">function</span>() {
-  <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
-});
-</pre>
-
-!SLIDE
+<div class="file-name">app/assets/javascripts/application.js</div>
 <pre class="medium">
 <span class="comment">//= require jquery
 //= require jquery_ujs
 //= require .
-</span>$( document ).on( <span class="string">"mobileinit"</span>, <span class="keyword">function</span>(){
+</span>$( document ).on( <span class="string">"mobileinit"</span>, <span class="keyword">function</span>() {
   <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
-});</pre>
+});
+</pre>
+
+!SLIDE
+<div class="file-name">app/assets/javascripts/application.js</div>
+<pre class="medium">
+<span class="comment">//= require jquery
+//= require jquery_ujs
+//= require .
+</span>$( document ).on( <b><span class="string">"mobileinit"</span></b>, <span class="keyword">function</span>() {
+  <span class="js2-external-variable">$</span>.mobile.ns = <span class="string">"foo-"</span>;
+});
+</pre>
 
 !SLIDE
 code - in view
