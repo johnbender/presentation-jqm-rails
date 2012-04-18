@@ -116,11 +116,11 @@ jquerymobile.com/gbs/
 
 !SLIDE
 ### github
-6000+ watchers / 1000+ forks
+6000+ watchers • 1000+ forks
 
 !SLIDE
 ### books
-8 books / 7 publishers
+8 books • 7 publishers
 
 !SLIDE
 ### sentiment
@@ -490,11 +490,40 @@ weinre • Adobe Shadow
 <pre style="font-size: 2.3em">
 <span class="keyword">function</span> <span class="function-name">onLoadFailed</span>( <span class="js2-function-param">event</span>, <span class="js2-function-param">data</span> ) {
   <span class="keyword">var</span> <span class="variable-name">text</span> = data.xhr.responseText,
-    <span class="variable-name">newHtml</span> = text.split( <span class="string">/&lt;\/?html[^&gt;]*&gt;/gmi</span> )[1];
+      <span class="variable-name">newHtml</span> = text.split( <span class="string">/&lt;\/?html[^&gt;]*&gt;/gmi</span> )[1];
+
   $( <span class="string">"html"</span> ).html( newHtml );
 }
 
 $( document ).on( <span class="string">"pageloadfailed"</span>, onLoadFailed );</pre>
+
+!SLIDE
+<div class="file-name">app/assets/javascripts/debug/pagefailed.js</div>
+<pre style="font-size: 2.3em">
+<span class="keyword">function</span> <span class="function-name">onLoadFailed</span>( <span class="js2-function-param">event</span>, <span class="js2-function-param">data</span> ) {
+  <span class="keyword">var</span> <span class="variable-name">text</span> = data.xhr.responseText,
+      <span class="variable-name">newHtml</span> = text.split( <span class="string">/&lt;\/?html[^&gt;]*&gt;/gmi</span> )[1];
+
+  $( <span class="string">"html"</span> ).html( newHtml );
+}
+
+$( document ).on( <b><span class="string">"pageloadfailed"</span></b>, onLoadFailed );</pre>
+
+!SLIDE
+<div class="file-name">app/assets/javascripts/application.js</div>
+<pre>
+<span class="comment">//= require jquery
+//= require jquery_ujs
+<b>//= require .</b>
+</span></pre>
+
+!SLIDE
+<div class="file-name">app/assets/javascripts/application.js</div>
+<pre>
+<span class="comment">//= require jquery
+//= require jquery_ujs
+<b>//= require_directory .</b>
+</span></pre>
 
 !SLIDE
 ## Possibilities
