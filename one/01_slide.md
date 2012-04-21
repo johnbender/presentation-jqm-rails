@@ -1,6 +1,6 @@
 !SLIDE
 <h1 style="font-size: 5.2em">Progressive Enhancement<br/><span style="font-size: 0.9em">on the mobile web</span></h1>
-TODO INSERT PRESO URL
+johnbender.github.com/presentation-jqm-rails
 
 !SLIDE bullets mono-bullets
 ## Me
@@ -21,20 +21,6 @@ vagrantup.com
 !SLIDE
 <h2 class="blur">Emojicons.com</h2>
 <div class="gigantor squished" style="font-size: 12em;">ლ(ಠ益ಠლ)</div>
-
-!SLIDE
-# Mobile
-### ‎(ﾉಥ益ಥ）ﾉ
-
-!SLIDE
-<h3 style="font-size: 6.0em">gazillions of devices</h3>
-usage doubled to 8.5% from '11 to '12
-
-!SLIDE center
-<img src="mobile-browser-stats.jpg" class="tweak-img" style="top: 50px; margin-left: 50px;"></img>
-
-!SLIDE
-### Opera > iOS
 
 !SLIDE
 # Jquery Mobile
@@ -87,10 +73,9 @@ no one uses this crap
 
 !SLIDE
 ## Browser Support
-jquerymobile.com/gbs/
 
 !SLIDE bullets grid
-<div style="float: left">
+<div style="float: left;  margin-top: 200px">
 <ul>
   <li> Apple iOS 3.2-5.0 </li>
   <li> Android 2.1-4.0 </li>
@@ -100,7 +85,7 @@ jquerymobile.com/gbs/
 </ul>
 </div>
 
-<div style="float: left">
+<div style="float: left; margin-bottom: 100px; margin-top: 200px">
 <ul>
   <li> Firebox Mobile </li>
   <li> Opera Mobile 11.0 </li>
@@ -109,6 +94,7 @@ jquerymobile.com/gbs/
   <li> IE 7+, Opera 10+ </li>
 </ul>
 </div>
+jquerymobile.com/gbs/
 
 !SLIDE
 ## Quick Stats
@@ -135,7 +121,14 @@ news.ycombinator.com/item?id=3549640
 
 !SLIDE
 <h2 class="blur">Webkit! amiright?!</h2>
-<div class="gigantor squished" style="">(屮ﾟДﾟ)屮</div>
+<div class="gigantor squished" style="font-size: 13em;">(ﾉಥ益ಥ）ﾉ</div>
+
+!SLIDE
+<h3 style="font-size: 6.0em">gazillions of devices</h3>
+usage doubled to 8.5% from '11 to '12
+
+!SLIDE center
+<img src="mobile-browser-stats.jpg" class="tweak-img" style="width: 90%; top: 80px; margin-left: 4%;"></img>
 
 !SLIDE
 ### history
@@ -162,7 +155,7 @@ each browser x 2
 
 !SLIDE
 <h2 class="blur">Android</h2>
-<div class="gigantor">(╥﹏╥)</div>
+<div class="gigantor" style="font-size: 18em; top: -50px">(╥﹏╥)</div>
 
 !SLIDE
 ### <img src="android-icon.png"></img> is the new <img src="ie-icon.png"></img>
@@ -174,7 +167,7 @@ inflammatory statements at railsconf
 
 !SLIDE
 ### rendering
-even rendering
+yes, even rendering
 
 !SLIDE
 ### position fixed
@@ -197,14 +190,11 @@ github.com/johnbender/jqm-rails
 sign up • sign in • status
 
 !SLIDE center
-<div class="rotate-right" style="top: 170px;"><h3>Presence</h3></div>
+<div class="rotate-left" style="top: 170px;"><h3>Presence</h3></div>
 <iframe class="phone-center" src="http://33.33.33.10:3000/sessions/new"> </iframe>
 
 !SLIDE
-## Points of interest
-
-!SLIDE
-### setting up
+## setting up
 
 !SLIDE
 <div class="file-name">app/views/layouts/application.html.erb</div>
@@ -260,8 +250,12 @@ sign up • sign in • status
 
 
 !SLIDE
+## page options
+page ∈ layout <span style="font-size: 1.2em">⋁</span> page ∈ view
+
+!SLIDE
 ### layout
-page ∈ layout
+views rendered into jqm page
 
 !SLIDE
 <div class="file-name">app/views/layouts/application.html.erb</div>
@@ -313,7 +307,7 @@ page ∈ layout
 
 !SLIDE
 ### partial
-page ∈ view
+views render their own pages
 
 !SLIDE
 <div class="file-name">app/views/layouts/application.html.erb</div>
@@ -348,7 +342,7 @@ page ∈ view
 </pre>
 
 !SLIDE
-### data-* names
+## data-* names
 jquery-rails data attributes
 
 !SLIDE
@@ -388,7 +382,6 @@ jquery-rails data attributes
 </pre>
 
 !SLIDE
-!SLIDE
 <div class="file-name">app/views/layouts/application.html.erb</div>
 <pre style="font-size: 2.3em;">
 &lt;<span class="function-name">meta</span> <span class="variable-name">name</span>=<span class="string">"viewport"</span>
@@ -400,14 +393,70 @@ jquery-rails data attributes
 </pre>
 
 !SLIDE
-### form validation
-support the back button
+## form validation
+generally, reposting to the same url
+
+!SLIDE
+### multipage
+existing loaded pages
+
+!SLIDE
+<div class="file-name">app/views/foos/index.html.erb*, app/views/bars/index.html.erb*</div>
+<pre class="large">
+&lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span> <span class="variable-name">data-url</span>=<span class="string">"/foos"</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+    All the Foos
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">div</span>&gt;
+
+&lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span> <span class="variable-name">data-url</span>=<span class="string">"/bars"</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+    &lt;<span class="function-name">a</span> <span class="variable-name">href</span>=<span class="string">"/foos"</span>&gt;Go to Foos&lt;/<span class="function-name">a</span>&gt;
+    All the Bars
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">div</span>&gt;</pre>
+
+!SLIDE
+<div class="file-name">app/views/foos/index.html.erb*, app/views/bars/index.html.erb*</div>
+<pre class="large">
+&lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span> <span class="variable-name">data-url</span>=<span class="string">"/foos"</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+    All the Foos
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">div</span>&gt;
+
+&lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span> <span class="variable-name">data-url</span>=<span class="string">"/bars"</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+    <b>&lt;<span class="function-name">a</span> <span class="variable-name">href</span>=<span class="string">"/foos"</span>&gt;Go to Foos&lt;/<span class="function-name">a</span>&gt;</b>
+    All the Bars
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">div</span>&gt;</pre>
+
+!SLIDE
+<div class="file-name">app/views/foos/index.html.erb*, app/views/bars/index.html.erb*</div>
+<pre class="large">
+&lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span> <span class="variable-name">data-url</span>=<span class="string">"/foos"</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+    All the Foos
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">div</span>&gt;
+
+&lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"page"</span> <span class="variable-name">data-url</span>=<span class="string">"/bars"</span>&gt;
+  &lt;<span class="function-name">div</span> <span class="variable-name">data-role</span>=<span class="string">"content"</span>&gt;
+    <b>&lt;<span class="function-name">a</span> <span class="variable-name">href</span>=<span class="string">"/bars"</span>&gt;Go to Foos&lt;/<span class="function-name">a</span>&gt;</b>
+    All the Bars
+  &lt;/<span class="function-name">div</span>&gt;
+&lt;/<span class="function-name">div</span>&gt;</pre>
+
+!SLIDE
+### back button
+android users are back button fiends
 
 !SLIDE
 <div class="file-name">app/helpers/application_helper.rb</div>
 <pre style="font-size: 2.3em;">
 <span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
-  attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1
+  attempt = request.parameters[<span class="string">"attempt"</span>].to_i + 1
   args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)
   send(*args)
 <span class="keyword">end</span>
@@ -417,7 +466,7 @@ support the back button
 <div class="file-name">app/helpers/application_helper.rb</div>
 <pre style="font-size: 2.3em;">
 <span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
-  <b>attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1</b>
+  <b>attempt = request.parameters[<span class="string">"attempt"</span>].to_i + 1</b>
   args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)
   send(*args)
 <span class="keyword">end</span>
@@ -427,7 +476,7 @@ support the back button
 <div class="file-name">app/helpers/application_helper.rb</div>
 <pre style="font-size: 2.3em;">
 <span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
-  attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1
+  attempt = request.parameters[<span class="string">"attempt"</span>].to_i + 1
   <b>args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)</b>
   send(*args)
 <span class="keyword">end</span>
@@ -437,7 +486,7 @@ support the back button
 <div class="file-name">app/helpers/application_helper.rb</div>
 <pre style="font-size: 2.3em;">
 <span class="keyword">def</span> <span class="function-name">differentiate_path</span>(path, *args)
-  attempt = (request.parameters[<span class="string">"attempt"</span>] || 0) + 1
+  attempt = request.parameters[<span class="string">"attempt"</span>].to_i + 1
   args.unshift(path).push(<span class="constant">:attempt</span> =&gt; attempt)
   <b>send(*args)</b>
 <span class="keyword">end</span>
@@ -470,7 +519,7 @@ support the back button
 &lt;/<span class="function-name">body</span>&gt;</pre>
 
 !SLIDE
-### debugging
+## debugging
 weinre • Adobe Shadow
 
 !SLIDE
