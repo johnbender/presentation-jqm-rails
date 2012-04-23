@@ -11,6 +11,10 @@ johnbender.github.com/presentation-jqm-rails
 !SLIDE center adobe-background
 ## Jquery Mobile
 
+!SLIDE center adobe-background
+## Hiring rubyists
+kstewart.me/2012/04/21/ruby-at-adobe.html
+
 !SLIDE center
 ## Vagrant
 vagrantup.com
@@ -664,7 +668,8 @@ AMD support • meta module
 ## Links
 * jquerymobile.com/resources
 * jquerymobile.com/themeroller
-* jqmgallery.com
+* github.com/johnbender/jqm-rails
+* kstewart.me/2012/04/21/ruby-at-adobe.html
 
 !SLIDE bullets mono-bullets
 ## Thanks
