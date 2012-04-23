@@ -102,7 +102,7 @@ jquerymobile.com/gbs/
 
 !SLIDE
 ### github
-6000+ watchers • 1000+ forks
+6000+ watchers • 1100+ forks
 
 !SLIDE
 ### books
@@ -139,16 +139,16 @@ usage doubled to 8.5% from '11 to '12
 180&#176;? 90&#176;? 0&#176;? 270&#176;?
 
 !SLIDE
+### web views
+2 x each browser
+
+!SLIDE
 ### tap vs click
-don't scroll, you'll be sorry
+delay • scrolling • both inputs
 
 !SLIDE high-image center
 <img src="droidincredible.jpg" style="height: 500px; float: left; margin-left: 155px;"></img>
 <img src="blackberry-bold.jpg" style="height: 480px; float: left; margin-top: 10px;"></img>
-
-!SLIDE
-### web views
-each browser x 2
 
 !SLIDE
 ## Android
@@ -182,19 +182,16 @@ toy examples work great
 ### ʕノ•ᴥ•ʔノ ︵ ┻━┻
 
 !SLIDE
-## Sample app
+### sample app
 github.com/johnbender/jqm-rails
 
 !SLIDE
 ### office presence
 sign up • sign in • status
 
-!SLIDE center
-<div class="rotate-left" style="top: 170px;"><h3>Presence</h3></div>
-<iframe class="phone-center" src="http://33.33.33.10:3000/sessions/new"> </iframe>
-
 !SLIDE
-## setting up
+## Setup
+getcha' <code>&lt;head&gt;</code> right...?
 
 !SLIDE
 <div class="file-name">app/views/layouts/application.html.erb</div>
@@ -248,9 +245,12 @@ sign up • sign in • status
 <b>&lt;<span class="function-name">script</span> <span class="variable-name">src</span>=<span class="string">"$CDN/jquery.mobile.js"</span>&gt;&lt;/<span class="function-name">script</span>&gt;</b>
 </pre>
 
+!SLIDE
+### jquery-rails
+v2.0.1 ⟶ 1.7.1
 
 !SLIDE
-## page options
+## Page options
 page ∈ layout <span style="font-size: 1.2em">⋁</span> page ∈ view
 
 !SLIDE
@@ -393,7 +393,7 @@ jquery-rails data attributes
 </pre>
 
 !SLIDE
-## form validation
+## Form validation
 generally, reposting to the same url
 
 !SLIDE
@@ -447,6 +447,20 @@ existing loaded pages
     All the Bars
   &lt;/<span class="function-name">div</span>&gt;
 &lt;/<span class="function-name">div</span>&gt;</pre>
+
+!SLIDE
+<pre>
+<span class="keyword">def</span> <span class="function-name">create</span>
+  <span class="variable-name">@user</span> = <span class="type">User</span>.new(params[<span class="constant">:user</span>])
+
+  <span class="keyword">if</span> <span class="variable-name">@user</span>.save
+    redirect_to root_url
+  <span class="keyword">else</span>
+    <b>render <span class="constant">:new</span></b>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre>
+
 
 !SLIDE
 ### back button
@@ -519,7 +533,7 @@ android users are back button fiends
 &lt;/<span class="function-name">body</span>&gt;</pre>
 
 !SLIDE
-## debugging
+## Debugging
 weinre • Adobe Shadow
 
 !SLIDE
