@@ -128,16 +128,52 @@ news.ycombinator.com/item?id=3549640
 !SLIDE
 <pre>
 <span class="comment">// no hash, no ajax
-</span><span class="js2-warning">example.com/foo/bar/baz</span>
+</span><span class="js2-warning">foo.com/bar</span>
 
 <span class="comment">// hash support
-</span><span class="js2-warning">example.com/#/foo/bar/baz</span>
+</span><span class="js2-warning">foo.com/#/bar</span>
 
 <span class="comment">// replaceState support
-</span><span class="js2-warning">example.com/foo/bar/baz</span></pre>
+</span><span class="js2-warning">foo.com/#/bar ⟶ foo.com/bar</span></pre>
+
+!SLIDE
+<pre>
+<span class="comment">// no hash, no ajax
+</span><b><span class="js2-warning">foo.com/bar</span></b>
+
+<span class="comment">// hash support
+</span><span class="js2-warning">foo.com/#/bar</span>
+
+<span class="comment">// replaceState support
+</span><span class="js2-warning">foo.com/#/bar ⟶ foo.com/bar</span></pre>
+
+!SLIDE
+<pre>
+<span class="comment">// no hash, no ajax
+</span><span class="js2-warning">foo.com/bar</span>
+
+<span class="comment">// hash support
+</span><b><span class="js2-warning">foo.com/#/bar</span></b>
+
+<span class="comment">// replaceState support
+</span><span class="js2-warning">foo.com/#/bar ⟶ foo.com/bar</span></pre>
+
+!SLIDE
+<pre>
+<span class="comment">// no hash, no ajax
+</span><span class="js2-warning">foo.com/bar</span>
+
+<span class="comment">// hash support
+</span><span class="js2-warning">foo.com/#/bar</span>
+
+<span class="comment">// replaceState support
+</span><b><span class="js2-warning">foo.com/#/bar ⟶ foo.com/bar</span></b></pre>
+
 
 !SLIDE
 <h3 style="font-size: 5.7em">toolbars: abs. ⟶ fixed</h3>
+<span style="font-size: 0.6em">github.com/jquery/jquery-mobile/blob/master/js/jquery.mobile.fixedToolbar.js#L30</span>
+
 
 !SLIDE
 ## Webkit
