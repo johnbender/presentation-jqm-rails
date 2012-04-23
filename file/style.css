@@ -62,7 +62,7 @@ iframe.phone {
 
 .bullets.grid ul {
   font-size: 3em;
-  margin-left: 40px;
+  margin-left: 60px;
   /* account for showoff positioning */
   margin-top: -200px;
 }
@@ -72,7 +72,8 @@ iframe.phone {
 }
 
 .bullets.grid.users ul {
-  margin-left: 80px;
+  margin-left: 60px;
+  font-size: 3.7em;
 }
 
 .bullets.small li {
@@ -111,12 +112,17 @@ h1 .small {
   font-size: 0.5em;
 }
 
+h1, h2 {
+  box-shadow: 0 1px 7px #444;
+}
+
 h1, h2, h3 {
- background-color: #666666;
- -webkit-background-clip: text;
- -moz-background-clip: text;
- background-clip: text;
- text-shadow: rgba(50, 50, 50, 0.8) 0px 1px 3px;
+  text-shadow: rgba(50, 50, 50, 0.8) 0px 1px 3px;
+}
+
+.content.no-padding p {
+  padding: 0px;
+  margin: 0px;
 }
 
 .content code {
@@ -274,7 +280,6 @@ h3 > b {
 .comment {
   /* font-lock-comment-face */
   color: #aea79f;
-  font-style: italic;
 }
 
 .comment-delimiter {
@@ -402,7 +407,7 @@ b .variable-name {
   line-height: 250px;
 }
 
-.rotate-right {
+.rotate-left {
   text-align: right;
   position: absolute;
   -webkit-transform: rotate(-90deg);
