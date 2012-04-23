@@ -120,6 +120,11 @@ h1, h2, h3 {
   text-shadow: rgba(50, 50, 50, 0.8) 0px 1px 3px;
 }
 
+.content.no-padding p {
+  padding: 0px;
+  margin: 0px;
+}
+
 .content code {
   font-size: 1.1em;
   font-family: 'monospace';

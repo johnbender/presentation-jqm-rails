@@ -117,10 +117,35 @@ news.ycombinator.com/item?id=3549640
 ### ( ˘ ³˘)♥
 
 !SLIDE
-## Webkit! amiright?!
+<h3 style="font-size: 5.7em">markup: nojs ⟶ js</h3>
+
+!SLIDE center no-padding
+<img src="semantic-markup.png"></img>
 
 !SLIDE
-<h2 class="blur">Webkit! amiright?!</h2>
+<h3 style="font-size: 5.7em">history: hash ⟶ state</h3>
+
+!SLIDE
+<pre>
+<span class="comment">// no hash, no ajax
+</span><span class="js2-warning">example.com/foo/bar/baz</span>
+
+<span class="comment">// hash support
+</span><span class="js2-warning">example.com/#/foo/bar/baz</span>
+
+<span class="comment">// replaceState support
+</span><span class="js2-warning">example.com/foo/bar/baz</span></pre>
+
+!SLIDE
+<h3 style="font-size: 5.7em">toolbars: abs. ⟶ fixed</h3>
+
+!SLIDE
+## Webkit
+it solves all the things, amiright!?!
+
+!SLIDE
+<h2 class="blur">Webkit</h2>
+it solves all the things, amiright!?!
 <div class="gigantor squished" style="font-size: 13em;">(ﾉಥ益ಥ）ﾉ</div>
 
 !SLIDE
